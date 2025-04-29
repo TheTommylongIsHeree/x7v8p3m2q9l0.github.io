@@ -6,28 +6,6 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
-    <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const reveals = document.querySelectorAll('.reveal');
-
-  const observer = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-          observer.unobserve(entry.target); // stops observing after it's revealed
-        }
-      });
-    },
-    {
-      threshold: 0.1 // reveal when 10% visible
-    }
-  );
-// why i comment these shit
-  reveals.forEach(el => observer.observe(el));
-});
-
-</script>
 
 </head>
 <body>
