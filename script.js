@@ -19,10 +19,10 @@ function setupThemeToggle() {
     
     if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
         document.body.setAttribute('data-theme', 'dark');
-        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
     } else {
         document.body.setAttribute('data-theme', 'light');
-        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        themeToggle.innerHTML = '<i class="fa-solid fa-moon-stars"></i>';
     }
     
     // Theme toggle event listener
