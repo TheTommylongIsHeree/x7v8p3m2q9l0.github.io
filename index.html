@@ -7,19 +7,26 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
     <script>
+document.addEventListener("DOMContentLoaded", function () {
   const reveals = document.querySelectorAll('.reveal');
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-      }
-    });
-  }, {
-    threshold: 0.1
-  });
-
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target); // stops observing after it's revealed
+        }
+      });
+    },
+    {
+      threshold: 0.1 // reveal when 10% visible
+    }
+  );
+// why i comment these shit
   reveals.forEach(el => observer.observe(el));
+});
+
 </script>
 
 </head>
@@ -47,7 +54,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1>Hi, I'm <span id="name">Your Name</span></h1>
-                <p id="bio">Full Stack Developer specializing in modern web technologies</p>
+                <p id="bio">A normal user</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn primary-btn">View Projects</a>
                     <a href="#contact" class="btn secondary-btn">Contact Me</a>
@@ -99,7 +106,7 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <p>email@example.com</p>
+                        <p>rbgkbj@skbiidi.com</p>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
@@ -118,7 +125,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; <span id="year"></span> <span id="footer-name">Your Name</span>. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> <span id="footer-name">Ni hao you</span>. All rights reserved.</p>
         </div>
     </footer>
 
