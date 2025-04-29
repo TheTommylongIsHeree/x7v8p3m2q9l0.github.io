@@ -31,11 +31,11 @@ function setupThemeToggle() {
         if (currentTheme === 'light') {
             document.body.setAttribute('data-theme', 'dark');
             localStorage.setItem('theme', 'dark');
-            themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
         } else {
             document.body.setAttribute('data-theme', 'light');
             localStorage.setItem('theme', 'light');
-            themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            themeToggle.innerHTML = '<i class="fa-solid fa-moon-stars"></i>';
         }
     });
 }
