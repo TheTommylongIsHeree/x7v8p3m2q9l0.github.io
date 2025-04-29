@@ -54,12 +54,12 @@ async function fetchPortfolioData() {
         // Fallback to sample data if API call fails
         return {
             profile: {
-                name: 'Your Name',
-                bio: 'Full Stack Developer specializing in modern web technologies',
-                email: 'email@example.com',
-                location: 'Your Location',
+                name: 'NegativeZ',
+                bio: 'A normal developer',
+                email: 'rbgkbj@gmail.com',
+                location: 'Vietnam',
                 socialLinks: {
-                    github: 'https://github.com',
+                    github: 'https://github.com/x7v8p3m2q9l0',
                     linkedin: 'https://linkedin.com',
                     twitter: 'https://twitter.com'
                 }
@@ -68,67 +68,43 @@ async function fetchPortfolioData() {
                 {
                     id: 1,
                     title: 'Portfolio Website',
-                    description: 'A responsive portfolio website built with HTML, CSS, and JavaScript.',
-                    image: 'placeholder-image.jpg',
+                    description: 'A responsive portfolio website built with HTML, CSS, and JavaScript. I loved Jupiter:)',
+                    image: 'jupiter.jpg',
                     liveUrl: '#',
-                    githubUrl: 'https://github.com',
+                    githubUrl: 'https://github.com/x7v8p3m2q9l0',
                     technologies: ['HTML', 'CSS', 'JavaScript']
                 },
-                {
-                    id: 2,
-                    title: 'E-commerce Platform',
-                    description: 'Full-stack e-commerce application with user authentication and payment processing.',
-                    image: 'placeholder-image.jpg',
-                    liveUrl: '#',
-                    githubUrl: 'https://github.com',
-                    technologies: ['React', 'Node.js', 'MongoDB', 'Express']
-                },
-                {
-                    id: 3,
-                    title: 'Weather App',
-                    description: 'A weather application that fetches and displays current weather data.',
-                    image: 'placeholder-image.jpg',
-                    liveUrl: '#',
-                    githubUrl: 'https://github.com',
-                    technologies: ['JavaScript', 'API', 'CSS']
-                }
             ],
             skills: [
                 {
                     id: 1,
                     name: 'HTML',
                     category: 'Frontend',
-                    icon: 'fab fa-html5'
+                    icon: 'fa-brands fa-html5'
                 },
                 {
                     id: 2,
                     name: 'CSS',
                     category: 'Frontend',
-                    icon: 'fab fa-css3-alt'
+                    icon: 'fa-brands fa-css'
                 },
                 {
                     id: 3,
                     name: 'JavaScript',
                     category: 'Frontend',
-                    icon: 'fab fa-js'
-                },
-                {
-                    id: 4,
-                    name: 'React',
-                    category: 'Frontend',
-                    icon: 'fab fa-react'
+                    icon: 'fa-brands fa-square-js'
                 },
                 {
                     id: 5,
                     name: 'Node.js',
                     category: 'Backend',
-                    icon: 'fab fa-node-js'
+                    icon: 'fa-brands fa-node-js'
                 },
                 {
                     id: 6,
-                    name: 'MongoDB',
-                    category: 'Database',
-                    icon: 'fas fa-database'
+                    name: 'Python',
+                    category: 'Backend',
+                    icon: 'fa-brands fa-python'
                 }
             ]
         };
