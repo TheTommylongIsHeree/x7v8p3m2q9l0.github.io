@@ -42,15 +42,15 @@ function setupThemeToggle() {
 
 // Fetch portfolio data from API
 async function fetchPortfolioData() {
-    try {
-        const response = await fetch('https://your-netlify-api-endpoint.netlify.app/.netlify/functions/getPortfolioData');
-        if (!response.ok) {
-            throw new Error('Failed to fetch portfolio data');
-        }
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error('Error fetching portfolio data:', error);
+    // try {
+    //     const response = await fetch('https://your-netlify-api-endpoint.netlify.app/.netlify/functions/getPortfolioData');
+    //     if (!response.ok) {
+    //         throw new Error('Failed to fetch portfolio data');
+    //     }
+    //     const data = await response.json();
+    //     return data;
+    // } catch (error) {
+        // console.error('Error fetching portfolio data:', error);
         // Fallback to sample data if API call fails
         return {
             profile: {
@@ -108,7 +108,6 @@ async function fetchPortfolioData() {
                 }
             ]
         };
-    }
 }
 
 // Render projects
