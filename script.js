@@ -123,8 +123,8 @@ function renderProjects(projects) {
         ).join('');
         
         projectCard.innerHTML = `
-            <img src="${project.image || 'placeholder-image.jpg'}" alt="${project.title}" class="project-image">
-            <div class="project-content">
+            <img src="${project.image || 'jupiter.png'}" alt="${project.title}" class="project-image reveal">
+            <div class="project-content reveal">
                 <h3 class="project-title">${project.title}</h3>
                 <p class="project-description">${project.description}</p>
                 <div class="project-tech">
@@ -150,11 +150,11 @@ function renderSkills(skills) {
         skillCard.className = 'skill-card';
         
         skillCard.innerHTML = `
-            <div class="skill-icon">
+            <div class="skill-icon reveal">
                 <i class="${skill.icon}"></i>
             </div>
-            <h3 class="skill-name">${skill.name}</h3>
-            <p class="skill-category">${skill.category}</p>
+            <h3 class="skill-name reveal">${skill.name}</h3>
+            <p class="skill-category reveal">${skill.category}</p>
         `;
         
         skillsContainer.appendChild(skillCard);
