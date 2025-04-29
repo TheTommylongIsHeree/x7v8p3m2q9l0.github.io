@@ -225,6 +225,18 @@ async function init() {
     renderProjects(portfolioData.projects);
     renderSkills(portfolioData.skills);
 }
+const reveals = document.querySelectorAll('.reveal');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+reveals.forEach(el => observer.observe(el));
 
 // Start the application
 document.addEventListener('DOMContentLoaded', init);
