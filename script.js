@@ -81,7 +81,7 @@ async function fetchPortfolioData() {
                     image: 'jupiter.png',
                     liveUrl: 'https://7k40xrgm-5000.asse.devtunnels.ms/',
                     githubUrl: 'https://github.com/x7v8p3m2q9l0/LegacyAI',
-                    technologies: ['HTML', 'CSS', 'JavaScript']
+                    technologies: ['Python', 'HTML', 'CSS', 'SQL', 'A.I.']
                 },
             ],
             skills: [
