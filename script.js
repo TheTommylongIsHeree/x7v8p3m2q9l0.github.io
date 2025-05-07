@@ -74,6 +74,15 @@ async function fetchPortfolioData() {
                     githubUrl: 'https://github.com/x7v8p3m2q9l0/x7v8p3m2q9l0.github.io',
                     technologies: ['HTML', 'CSS', 'JavaScript']
                 },
+                {
+                    id: 2,
+                    title: 'A flask A.I. website',
+                    description: 'An A.I. website made using flask, flask-login, flask-sqlalchemy, flask-migrate, sentry, llama-cpp',
+                    image: 'jupiter.png',
+                    liveUrl: 'https://7k40xrgm-5000.asse.devtunnels.ms/',
+                    githubUrl: 'https://github.com/x7v8p3m2q9l0/LegacyAI',
+                    technologies: ['HTML', 'CSS', 'JavaScript']
+                },
             ],
             skills: [
                 {
